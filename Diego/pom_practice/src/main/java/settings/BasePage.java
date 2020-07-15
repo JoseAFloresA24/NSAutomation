@@ -37,6 +37,11 @@ abstract public class BasePage {
         element.sendKeys(message);
     }
 
+    public void deleteElement(WebElement element){
+        this.waitForElementToAppear(element);
+        element.clear();
+    }
+
     public void hoverElement(WebElement element){
         this.waitForElementToAppear(element);
         actions.moveToElement(element).perform();
