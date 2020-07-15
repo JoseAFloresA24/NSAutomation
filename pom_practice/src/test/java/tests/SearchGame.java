@@ -12,7 +12,7 @@ import settings.BaseTest;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
-public class HomePageTests extends BaseTest {
+public class SearchGame extends BaseTest {
 
     private NavBar navBar;
     private GamePage gamePage;
@@ -26,8 +26,7 @@ public class HomePageTests extends BaseTest {
     }
 
     @Test
-    public void SearchGame(){
-        navBar.deleteGameSearchInput();
+    public void searchGame(){
         String game_name = "Age";
         navBar.writeGameIntoSearchInput(game_name);
         ArrayList<String> games = navBar.getSuggestedGames();
