@@ -22,8 +22,8 @@ public class GameInfo extends BasePage {
 
     public String[] getGameInfo(){
         String game_info = genero.getText();
-        String lines[] = game_info.split("\\r?\\n");
-        return (lines);
+        String game_info_array[] = game_info.split("\\r?\\n");
+        return (game_info_array);
     }
 
     public String getGameTitle(){

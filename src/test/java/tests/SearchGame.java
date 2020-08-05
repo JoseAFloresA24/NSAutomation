@@ -25,8 +25,8 @@ public class SearchGame extends BaseTest {
         gameInfo = new GameInfo(this.driver);
     }
 
-    @Test
-    public void searchGame(){
+    @Test(groups = {"search", "regression"})
+    public void searchGameTest(){
         String game_name = "Age";
         navBar.writeGameIntoSearchInput(game_name);
         ArrayList<String> games = navBar.getSuggestedGames();

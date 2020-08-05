@@ -24,8 +24,8 @@ public class CheckGame extends BaseTest {
         gameInfo = new GameInfo(this.driver);
     }
 
-    @Test
-    public void checkGame(){
+    @Test(groups = {"search", "smoke"})
+    public void checkGameTest(){
         navBar.deleteGameSearchInput();
         String game_name = "Portal Bundle";
         navBar.writeGameIntoSearchInput(game_name);

@@ -26,8 +26,8 @@ public class CheckGameData extends BaseTest {
         gameInfo = new GameInfo(this.driver);
     }
 
-    @Test
-    public void checkGameData(){
+    @Test(groups = {"regression", "smoke"})
+    public void checkGameDataTest(){
         String [] details = {"TITLE: Age of Empires II: Definitive Edition",
                 "GENRE: Strategy",
                 "DEVELOPER: Forgotten Empires, Tantalus Media, Wicked Witch",
