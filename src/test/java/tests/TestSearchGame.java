@@ -12,7 +12,7 @@ import settings.BaseTest;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
-public class SearchGame extends BaseTest {
+public class TestSearchGame extends BaseTest {
 
     private NavBar navBar;
     private GamePage gamePage;

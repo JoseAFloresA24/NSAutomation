@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
-public class CheckGameData extends BaseTest {
+public class TestCheckGameData extends BaseTest {
 
     private NavBar navBar;
     private GamePage gamePage;

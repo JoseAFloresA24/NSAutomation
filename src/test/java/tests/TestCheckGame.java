@@ -11,7 +11,7 @@ import settings.BaseTest;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
-public class CheckGame extends BaseTest {
+public class TestCheckGame extends BaseTest {
 
     private NavBar navBar;
     private GamePage gamePage;
