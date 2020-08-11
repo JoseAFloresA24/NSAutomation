@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/automationqasessions.iml" filepath="$PROJECT_DIR$/automationqasessions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mastertask.iml" filepath="$PROJECT_DIR$/mastertask.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pom_practice.iml" filepath="$PROJECT_DIR$/pom_practice.iml" />
     </modules>
   </component>
 </project>
