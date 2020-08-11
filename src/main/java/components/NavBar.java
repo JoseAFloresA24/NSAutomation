@@ -26,9 +26,6 @@ public class NavBar extends BasePage {
     @FindBy(css = "#search_suggestion_contents > a > .match_name")
     private List<WebElement> suggestedGames;
 
-    @FindBy(css = "#search_suggestion_contents > a:nth-child(1) > div.match_name")
-    private WebElement firstOption;
-
     public NavBar(WebDriver driver){
         super(driver);
         PageFactory.initElements(driver, this);
@@ -54,20 +51,8 @@ public class NavBar extends BasePage {
         return suggested_games_names;
     }
 
-    public String getFirstOptionTitle(){
-        return (firstOption.getText());
-    }
-
-    public void clickFirstOption(){
-        click(firstOption);
-    }
-
     public void writeGameIntoSearchInput(String game_name){
         this.writeInInput(searchTheStoreInput, game_name);
-    }
-
-    public void deleteGameSearchInput(){
-        this.deleteElement(searchTheStoreInput);
     }
 
     private void openNavBarTab(WebElement tab){
