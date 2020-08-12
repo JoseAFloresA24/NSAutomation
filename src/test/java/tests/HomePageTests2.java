@@ -9,7 +9,7 @@ import components.NavBar;
 
 import java.util.ArrayList;
 
-public class HomePageTests extends BaseTest {
+public class HomePageTests2 extends BaseTest {
 
     private NavBar navBar;
 
@@ -18,14 +18,14 @@ public class HomePageTests extends BaseTest {
         navBar = new NavBar(this.driver);
     }
 
-    @Test(groups = "smash")
-    public void openAllNavBarTabs(){
+    @Test
+    public void openAllNavBarTabs2(){
         navBar.openYourStoreTab();
         navBar.openGamesTab();
     }
 
     @Test
-    public void testSuggestedGames(){
+    public void testSuggestedGames2(){
         String game_name = "Portal";
         navBar.writeGameIntoSearchInput(game_name);
         ArrayList<String> games = navBar.getSuggestedGames();
